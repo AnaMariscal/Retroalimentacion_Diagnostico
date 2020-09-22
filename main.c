@@ -55,9 +55,6 @@ int main(){
 
 
 
-
-
-
         fflush(stdin);
     }while(op != '0');
 
