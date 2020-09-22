@@ -1,5 +1,32 @@
 #include <stdio.h>
 
+void capturar_enteros(){
+    int enteros[5];
+    float promedio;
+    int suma = 0;
+
+    for (size_t i = 0; i < 5; i++)
+    {
+        scanf("%i", &enteros[i]);
+
+    }
+    for (size_t i = 0; i < 5; i++)
+    {
+        printf("%i\n", 5);
+
+    }
+    for (size_t i = 0; i < 5; i++)
+    {
+       suma = suma + enteros[i]; 
+    }
+    printf("Suma: %i\n", suma);
+    printf("Promedio: %f\n", suma/5.0);
+    
+}
+
+
+
+
 int main(){
     char op;
 
@@ -11,8 +38,30 @@ int main(){
         printf("0. Salir\n");
         scanf("%c", &op);
 
+    switch (op)
+    {
+    case '1':
+        capturar_enteros();
+        break;
+    case '2':
+        break;
+    case '3':
+        break;
+    default:
+        break;
+    }
+
+
+
+
+
+
+
+
         fflush(stdin);
     }while(op != '0');
+
+
 
 
 
